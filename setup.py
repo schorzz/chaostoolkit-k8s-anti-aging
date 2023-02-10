@@ -9,7 +9,7 @@ def get_version_from_package() -> str:
     """
     Read the package version from the source without importing it.
     """
-    path = os.path.join(os.path.dirname(__file__), "chaosext/__init__.py")
+    path = os.path.join(os.path.dirname(__file__), "antiaging/__init__.py")
     path = os.path.normpath(os.path.abspath(path))
     with open(path) as f:
         for line in f:
@@ -21,6 +21,6 @@ def get_version_from_package() -> str:
 
 if __name__ == '__main__':
     setup(
-        name="chaostoolkit-my-extension",
+        name="chaostoolkit-k8s-antiaging",
         version=get_version_from_package()
     )
