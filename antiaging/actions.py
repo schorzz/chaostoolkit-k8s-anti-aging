@@ -12,6 +12,7 @@ from kubernetes.client.rest import ApiException
 from logzero import logger
 from pytz import UTC
 
+
 __all__ = ["nodes_older_than"]
 
 
