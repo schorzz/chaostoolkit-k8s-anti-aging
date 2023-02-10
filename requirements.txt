@@ -1,1 +1,2 @@
 chaostoolkit-lib~=1.25
+kubernetes==25.3.0
