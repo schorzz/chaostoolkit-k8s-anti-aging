@@ -51,7 +51,7 @@ def nodes_older_than(
     candidates.sort(key=lambda x: x.metadata.creation_timestamp)
 
     logger.info(
-        f"Found {len(candidates)} candidates: [{', '.join(f'{candidate.metadata.name} {candidate.metadata.creation_timestamp}' for candidate in candidates)}]"
+        f"Found {len(candidates)} candidates: [{', '.join(f'{candidate.metadata.name} {candidate.metadata.creation_timestamp}' for candidate in candidates)}]"  # noqa
     )
     candidates = candidates[: min(count, len(candidates))]
 

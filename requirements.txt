@@ -1,2 +1,4 @@
 chaostoolkit-lib~=1.25
 kubernetes==25.3.0
+pytz==2022.7.1
+chaostoolkit-kubernetes==0.26.3
