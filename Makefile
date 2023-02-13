@@ -26,3 +26,8 @@ format:
 .PHONY: tests
 tests:
 	pytest
+
+.PHONY: clean
+clean:
+	rm -rf build dist
+	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
